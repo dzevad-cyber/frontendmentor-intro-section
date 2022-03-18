@@ -1,0 +1,15 @@
+@use '../abstracts/colors' as clr;
+@use '../abstracts/typography' as tp;
+
+.card-feature {
+  background-color: clr.$accent-100;
+  color: clr.$primary-white;
+  padding: 2rem 5rem;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+
+  &__text-bold {
+    font-weight: tp.$fw-bold;
+  }
+}

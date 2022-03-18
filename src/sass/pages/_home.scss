@@ -1,0 +1,35 @@
+@use '../abstracts/typography' as tp;
+@use '../abstracts/colors' as clr;
+
+.intro {
+  $width-mobile: 37.5rem;
+  $width-desktop: 144rem;
+
+  $fz-title: clamp(tp.$fz-title-min, 2.1176rem + 2.3529vw, tp.$fz-title-max);
+  $fz-text: clamp(
+    tp.$fz-text-mobile,
+    1.0353rem + 0.7059vw,
+    tp.$fz-text-desktop
+  );
+
+  display: grid;
+  grid-auto-rows: min-content;
+  padding: 5rem 2rem;
+
+  width: min($width-mobile, $width-desktop);
+  min-height: 100vh;
+  background-image: url('../images/bg-intro-mobile.png');
+  background-color: clr.$primary-red;
+
+  &__title {
+    // <= 300px = 3rem, between 3rem and 4rem ,>= 800px 4rem
+    font-size: $fz-title;
+    line-height: 1;
+    color: clr.$primary-white;
+  }
+
+  &__text {
+    color: clr.$primary-white;
+    font-size: $fz-text;
+  }
+}
