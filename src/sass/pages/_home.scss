@@ -17,7 +17,7 @@
   padding: 5rem 2rem;
   row-gap: 5rem;
 
-  width: min($width-mobile, $width-desktop);
+  max-width: 375px;
   min-height: 100vh;
   background-image: url('../images/bg-intro-mobile.png');
   background-color: clr.$primary-red;
@@ -26,6 +26,11 @@
     display: grid;
     row-gap: 2rem;
     justify-items: center;
+
+    @media (min-width: 62.5em) {
+      grid-auto-rows: min-content;
+      align-content: center;
+    }
   }
 
   &__body {
@@ -39,6 +44,10 @@
     line-height: 1.3;
     color: clr.$primary-white;
     text-align: center;
+
+    @media (min-width: 62.5em) {
+      text-align: start;
+    }
   }
 
   &__text {
@@ -46,5 +55,22 @@
     font-size: $fz-text;
     text-align: center;
     max-width: 315px;
+
+    @media (min-width: 62.5em) {
+      text-align: start;
+      max-width: 100%;
+      font-size: tp.$fz-text-mobile;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  @media (min-width: 62.5em) {
+    background-image: url('../images/bg-intro-desktop.png');
+    max-width: 100vw;
+
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+    column-gap: 10rem;
+    align-content: center;
   }
 }

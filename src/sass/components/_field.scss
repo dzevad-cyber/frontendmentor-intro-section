@@ -28,8 +28,8 @@
   }
 
   &__error-text {
-    font-size: tp.$fz-text-mobile;
-    font-weight: 1.1rem;
+    font-size: tp.$fz-error-text;
+    font-weight: tp.$fw-medium;
     justify-self: end;
     display: none;
   }

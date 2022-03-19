@@ -26,5 +26,9 @@
       color: clr.$primary-red;
       font-weight: tp.$fw-bold;
     }
+
+    @media (min-width: 62.5em) {
+      max-width: 100%;
+    }
   }
 }

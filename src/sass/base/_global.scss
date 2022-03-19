@@ -1,0 +1,9 @@
+@use '../abstracts/colors' as clr;
+
+.error-field {
+  border: 1px solid clr.$primary-red !important;
+}
+
+.error-text {
+  color: clr.$primary-red !important;
+}

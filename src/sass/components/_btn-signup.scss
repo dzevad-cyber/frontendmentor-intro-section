@@ -11,4 +11,8 @@
   text-align: center;
   letter-spacing: 1px;
   border-radius: 5px;
+
+  @media (min-width: 62.5em) {
+    padding: 1rem 0;
+  }
 }

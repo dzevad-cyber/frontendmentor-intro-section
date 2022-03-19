@@ -19,9 +19,15 @@ body {
   line-height: 1.6;
   font-size: tp.$fz-base;
   font-family: tp.$ff-poppins;
+}
 
+main {
   display: grid;
   justify-items: center;
+
+  @media (min-width: 62.5em) {
+    justify-items: unset;
+  }
 }
 
 ul {
