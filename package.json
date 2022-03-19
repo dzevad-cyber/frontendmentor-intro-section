@@ -15,5 +15,8 @@
     "@parcel/transformer-sass": "^2.3.2",
     "gh-pages": "^3.2.3",
     "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "email-validator": "^2.0.4"
   }
 }

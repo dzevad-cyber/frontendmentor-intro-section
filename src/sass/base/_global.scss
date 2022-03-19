@@ -1,9 +1,17 @@
 @use '../abstracts/colors' as clr;
 
-.error-field {
-  border: 1px solid clr.$primary-red !important;
+.field-box__field.error-field {
+  border: 1px solid clr.$primary-red;
+}
+
+.field-box__field-input.error-input {
+  color: clr.$primary-red;
 }
 
 .error-text {
-  color: clr.$primary-red !important;
+  display: none;
+}
+
+.field-box__error-icon.error-icon {
+  display: grid;
 }

@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     align-items: center;
+    column-gap: 1rem;
 
     border-radius: 5px;
     border: 1px solid clr.$neutral-gray-blue;
@@ -22,15 +23,15 @@
   }
 
   &__error-icon {
-    display: grid;
-    place-items: center;
     display: none;
+    place-items: center;
   }
 
   &__error-text {
     font-size: tp.$fz-error-text;
     font-weight: tp.$fw-medium;
+    color: clr.$primary-red;
+
     justify-self: end;
-    display: none;
   }
 }
