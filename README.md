@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/lulzz/frontendmentor-intro-section)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://lulzz.github.io/frontendmentor-intro-section/)
 
 ### Built with
 

@@ -31,4 +31,8 @@
       max-width: 100%;
     }
   }
+
+  @media (min-width: 62.5em) {
+    padding: 3rem 4rem;
+  }
 }
