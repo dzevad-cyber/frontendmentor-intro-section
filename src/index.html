@@ -20,42 +20,106 @@
   <body>
     <main>
       <section class="intro">
-        <h1 class="intro__title">Learn to code by watching others</h1>
-        <p class="intro__text">
-          See how experienced developers solve problems in real-time. Watching
-          scripted tutorials is great, but understanding how developers think is
-          invaluable.
-        </p>
+        <div class="intro__header">
+          <h1 class="intro__title">Learn to code by watching others</h1>
+          <p class="intro__text">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
         <div class="intro__body">
           <div class="intro__card-feature card-feature">
             <span class="card-feature__text-bold">Try it free 7 days</span> then
             $20/mo. thereafter
           </div>
-          <article class="signup">
-            <form class="signup-form">
+          <div class="signup">
+            <form class="signup__form">
               <div class="field-box">
-                <input
-                  type="text"
-                  class="field-box__field"
-                  placeholder="First Name"
-                />
-                <div class="field-box__error-icon hide">
-                  <img
-                    src="./images/icon-error.svg"
-                    alt="exlamation point"
-                    title="error icon"
+                <div class="field-box__field">
+                  <input
+                    type="text"
+                    class="field-box__field-input"
+                    placeholder="First Name"
                   />
+                  <div class="field-box__error-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      alt="exlamation point"
+                      title="error icon"
+                    />
+                  </div>
                 </div>
-                <span class="field-box__error-text hide">
+                <span class="field-box__error-text">
                   First name cannot be emtpy
                 </span>
               </div>
-              <button class="btn-signup">Claim your free trial</button>
+              <div class="field-box">
+                <div class="field-box__field">
+                  <input
+                    type="text"
+                    class="field-box__field-input"
+                    placeholder="Last Name"
+                  />
+                  <div class="field-box__error-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      alt="exlamation point"
+                      title="error icon"
+                    />
+                  </div>
+                </div>
+                <span class="field-box__error-text">
+                  First name cannot be emtpy
+                </span>
+              </div>
+              <div class="field-box">
+                <div class="field-box__field">
+                  <input
+                    type="email"
+                    class="field-box__field-input"
+                    placeholder="Email Address"
+                  />
+                  <div class="field-box__error-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      alt="exlamation point"
+                      title="error icon"
+                    />
+                  </div>
+                </div>
+                <span class="field-box__error-text">
+                  First name cannot be emtpy
+                </span>
+              </div>
+              <div class="field-box">
+                <div class="field-box__field">
+                  <input
+                    type="password"
+                    class="field-box__field-input"
+                    placeholder="Password"
+                  />
+                  <div class="field-box__error-icon">
+                    <img
+                      src="./images/icon-error.svg"
+                      alt="exlamation point"
+                      title="error icon"
+                    />
+                  </div>
+                </div>
+                <span class="field-box__error-text">
+                  First name cannot be emtpy
+                </span>
+              </div>
+              <button class="btn btn-signup">Claim your free trial</button>
             </form>
             <p class="signup__disclaimer">
-              By clicking the button, you are agreeing to our Terms and Services
+              By clicking the button, you are agreeing to our
+              <span class="signup__disclaimer--asscent">
+                Terms and Services
+              </span>
             </p>
-          </article>
+          </div>
         </div>
       </section>
     </main>

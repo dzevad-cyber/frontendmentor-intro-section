@@ -1,0 +1,36 @@
+@use '../abstracts/typography' as tp;
+@use '../abstracts/colors' as clr;
+
+.field-box {
+  display: grid;
+  row-gap: 0.5rem;
+
+  &__field {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+
+    border-radius: 5px;
+    border: 1px solid clr.$neutral-gray-blue;
+    padding: 1rem;
+  }
+
+  &__field-input {
+    all: unset;
+    font-weight: tp.$fw-semi-bold;
+    font-size: tp.$fz-text-mobile;
+  }
+
+  &__error-icon {
+    display: grid;
+    place-items: center;
+    display: none;
+  }
+
+  &__error-text {
+    font-size: tp.$fz-text-mobile;
+    font-weight: 1.1rem;
+    justify-self: end;
+    display: none;
+  }
+}

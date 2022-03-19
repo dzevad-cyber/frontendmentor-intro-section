@@ -1,0 +1,30 @@
+@use '../abstracts/typography' as tp;
+@use '../abstracts/colors' as clr;
+
+.signup {
+  $signup-row-gap: 2rem;
+
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: grid;
+  row-gap: $signup-row-gap;
+
+  &__form {
+    display: grid;
+    row-gap: $signup-row-gap;
+  }
+
+  &__disclaimer {
+    font-size: tp.$fz-text-micro;
+    color: clr.$neutral-gray-blue;
+    text-align: center;
+    max-width: 250px;
+    justify-self: center;
+
+    &--asscent {
+      color: clr.$primary-red;
+      font-weight: tp.$fw-bold;
+    }
+  }
+}

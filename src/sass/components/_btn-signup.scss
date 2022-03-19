@@ -1,0 +1,14 @@
+@use '../abstracts/colors' as clr;
+
+.btn {
+  all: unset;
+
+  cursor: pointer;
+  background-color: clr.$primary-green;
+  color: clr.$primary-white;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
