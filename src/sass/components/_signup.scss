@@ -9,6 +9,7 @@
   border-radius: 10px;
   display: grid;
   row-gap: $signup-row-gap;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
 
   &__form {
     display: grid;
